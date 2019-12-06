@@ -1,0 +1,3 @@
+-- 1. Design the schema for movie cruiser in MySQL Workbench
+-- 2. Generate the SQL schema script in MySQL Workbench
+-- 3. Paste the generated the SQL code here
