@@ -1,1 +1,82 @@
 /* Add styles for application here */
+body {
+	height: 99%;
+	width: 99%;
+}
+header {
+	margin: 5px;
+	background-color: #2a527a;
+	height: 70px;
+}
+div {
+	height: 690px;
+	margin-left: 30px;
+	padding: 50px;	
+}
+footer {
+	background-color: #8b8c8c;
+	height: 75px;
+}
+.h1 {
+	color: #ffffff;
+	margin: 20px;
+	font-size: 30px;
+	margin-bottom:20px;
+}
+img {
+	height: 60px;
+	width: 70 px;
+}
+.move {
+	color: #ffffff;
+	float: right;
+	margin-right: 200px;
+	margin-top: -40px;
+}
+.black {
+	padding: 15px;
+}
+h3 {
+	color: #00c93c;
+	margin-bottom:100px;
+}
+table {
+	width: 800px;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.center {
+	text-align: center;
+}
+.sub {
+	height: 45px;
+	width: 120px;
+	background-color: #2a527a;
+	color: #ffffff;
+}
+.size {
+	width: 750px;
+}
+.black {
+	color: #000000;
+}
+.fav {
+	color: #ffffff;
+	float: right;
+	margin-right: 50px;
+	margin-top:-40px;
+}
+.add {
+	color: #00c93c;
+	margin-left: 220px;
+}
+.blue {
+	color: #1888c9;
+}
+.gray {
+	color: #8b8c8c;
+}
