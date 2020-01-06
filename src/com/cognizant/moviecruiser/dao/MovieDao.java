@@ -13,4 +13,7 @@ public interface MovieDao {
 
 	public Movie getMovie(long movieId);
 
+	public Movie getMovieList(int id);
+
 }
+

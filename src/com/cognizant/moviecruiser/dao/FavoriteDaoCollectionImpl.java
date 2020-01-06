@@ -64,9 +64,13 @@ public class FavoriteDaoCollectionImpl implements FavoriteDao {
 	}
 
 	@Override
-	public void removeFavorites(long userId, long movieId) {
+	public void removeFavorites(long userId, long movieId) throws FavoriteEmptyException {
 		// TODO Auto-generated method stub
 		List<Movie> movieList = userFavorite.get(userId).getMovieItem();
+		if(movieList==null || movieList.isEmpty())
+		{
+			throw new FavoriteEmptyException();
+		}
 		for (int i = 0; i < movieList.size(); i++) {
 			if (movieList.get(i).getId() == movieId) {
 				movieList.remove(i);

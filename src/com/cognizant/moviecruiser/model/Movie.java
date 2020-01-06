@@ -148,4 +148,9 @@ public class Movie {
 		return 0;
 	}
 
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

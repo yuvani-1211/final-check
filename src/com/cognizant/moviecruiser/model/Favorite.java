@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.cognizant.moviecruiser.model.Movie;
 
-public class Favorite {
+public class Favorite{
 	private List<Movie> movieItem;
 
 

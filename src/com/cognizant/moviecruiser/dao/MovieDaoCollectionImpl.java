@@ -22,7 +22,7 @@ public class MovieDaoCollectionImpl implements MovieDao {
 					new Movie(3, "TItanic", 218746394, true, DateUtil.convertToDate("21/08/2017"), "Romance", false));
 			movieList.add(new Movie(4, "Jurassic World", 1671713208, false, DateUtil.convertToDate("02/07/2017"),
 					"Science Fiction", true));
-			movieList.add(new Movie(2, "Avengers: End Game", 275076034, true, DateUtil.convertToDate("02/11/2020"),
+			movieList.add(new Movie(5, "Avengers: End Game", 275076034, true, DateUtil.convertToDate("02/11/2020"),
 					"Superher", false));
 
 		}
@@ -73,6 +73,12 @@ public class MovieDaoCollectionImpl implements MovieDao {
 		}
 		return movie;
 
+	}
+
+	@Override
+	public Movie getMovieList(int id) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
