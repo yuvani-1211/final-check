@@ -40,26 +40,23 @@
 					</tr>
 					<tr>
 						<td><input type="text" name="gross1" id="gross"  class="right" value="${movie.boxOffice}"/></td>
-						
-						<td><input type="radio" name="rd" id="yes" <c:if test="${movie.active eq 'true' }"> Checked </c:if>><label for="yes">Yes</label>
-							<input type="radio" name="rd" id="no" <c:if test=${movie.active eq 'false'}">Checked</c:if>><label for="no">No</label>
+						<td><input type="radio" name="rd" id="yes" checked value="${movie.active}"><label for="yes">Yes</label>
+							<input type="radio" name="rd" id="no"><label for="no">No</label>
 						</td>
-						
-						<td><input type="text" name="date" id="date" value="<fmt:formatDate pattern="dd/MM/yyyy"  value="${movie.dateOfLaunch}"/>  "></td>
-						
+						<td><input type="text" name="date" id="date" value="<fmt:formatDate pattern="dd/MM/yyyy"  value="${movie.dateOfLaunch}"/>   "></td>
 						<td>
 							<select   name="genre" id="genre" value="${movie.genre}"> 
-							<option value="${movie.genre}">${movie.genre}</option>
-								<option value="Superhero" >Superhero</option> 
-								<option value="Romance">Romance</option> 
-								<option value="comedy">comedy</option> 
-								<option value="Adventure">Adventure</option> 
-								<option value="Thriller">Thriller</option> 
+								<option>Science Fiction</option> 
+								<option selected>Superhero</option> 
+								<option>Romance</option> 
+								<option>comedy</option> 
+								<option>Adventure</option> 
+								<option>Thriller</option> 
 							</select>
 						</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" id="check" name="check" <c:if test="${movie.hasTeaser eq 'true' }" Checked></c:if>> 
+						<td><input type="checkbox" id="check" name="check" checked value="${movie.hasTeaser}"> 
 							<label for="check">Has Teaser</label>
 						</td>
 					</tr>
