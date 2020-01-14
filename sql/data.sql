@@ -29,16 +29,7 @@ me_date_of_launch='2019-03-15',
 me_genre='Thiller',
 me_hasTeaser='No' where me_id=1;
 
--- -------------------------------------------------------------------
--- getting the movie items
--- -------------------------------------------------------------------
 
-select 
-me_title as Title,
-me_boxOffice as Box_Office,
-me_genre as Genre,
-me_hasTeaser as HasTeaser
-from movie_item where me_active='yes' and me_date_of_launch < current_date();
 
 -- -------------------------------------------------------------------
 -- inserting the user values into the table
@@ -57,6 +48,17 @@ values(1,2),(1,1),
 (1,3),(2,5),(3,3);
 
 -- -------------------------------------------------------------------
+-- getting the movie items
+-- -------------------------------------------------------------------
+
+select 
+me_title as Title,
+me_boxOffice as Box_Office,
+me_genre as Genre,
+me_hasTeaser as HasTeaser
+from movie_item
+ where me_active='Yes' and me_date_of_launch < current_date();
+-- -------------------------------------------------------------------
 --  getting the movie Item Favorite list
 -- -------------------------------------------------------------------
 
@@ -64,8 +66,8 @@ select
 me_title as Title,
 me_boxOffice as Box_Office,
 me_genre as Genre
-from 
-movie_item mv join favorite ft on(mv.me_id = ft.ft_id)
+from movie_item mv 
+join favorite ft on(mv.me_id = ft.ft_id)
 where  ft.ft_us_id=1;
 
 -- -------------------------------------------------------------------
@@ -84,3 +86,14 @@ where  ft.ft_us_id=1;
 delete from favorite
 where ft_mv_id=3 and ft_us_id=1;
 
+-- -------------------------------------------------------------------
+--  retriving the  Favorite list  after deeleted
+-- -------------------------------------------------------------------
+
+select 
+me_title as Title,
+me_boxOffice as Box_Office,
+me_genre as Genre
+from movie_item mv 
+join favorite ft on(mv.me_id = ft.ft_id)
+where  ft.ft_us_id=1;
