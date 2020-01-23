@@ -85,4 +85,6 @@ public class FavoriteDaoCollectionImpl implements FavoriteDao {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	
 }
